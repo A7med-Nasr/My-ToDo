@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,600;9..40,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,600;9..40,800&family=Finger+Paint&family=Lato:wght@300;400;700;900&family=Rubik:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/imgs/logo.png">
+    <link rel="stylesheet" href="./assets/vendors/font-awesome/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="./assets/imgs/logo.png" alt="">
+        <h1>My To-Do</h1>
+    </header>
+    <main>
+        <div class="heading">
+            <input class="form-input" type="text" name="t-input" placeholder="What do you think about?">
+            <button class="main-btn">ADD</button>
+        </div>
+        <div class="t-head">
+            <h2>Tasks: <span>0</span></h2>
+        </div>
+        <div class="container">
+            <div id="tasks">
+                <div class="row">
+                    <div class="caption">
+                        <h2>Task 1</h2>
+                    </div>
+                    <div class="action">
+                        <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="del-btn"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="./assets/js/main.js">
+
+    </script>
+</body>
+
+</html>

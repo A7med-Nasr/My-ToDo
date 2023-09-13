@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Finger Paint', cursive;
+    background-color: #f2ede0;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Finger Paint', cursive;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #a64454;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    box-shadow: 0 0 20px #a64454;
+}
+
+h1,
+img {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+h1 {
+    color: #f2ede0;
+    padding-top: 3px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    padding: 80px 0;
+    background-color: transparent;
+}
+
+.heading {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading input {
+    width: 75%;
+    height: 40px;
+    font-size: 17px;
+    padding-left: 10px;
+    border: 2px solid #52635b;
+    outline: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.heading button {
+    width: 24%;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #52635b;
+    border: none;
+    color: #f2ede0;
+    transition: 0.3s;
+}
+
+.heading button:hover {
+    background-color: #697d73f2;
+}
+
+.tasks {
+    display: block;
+}
+
+.t-head {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.t-head h2 {
+    font-size: 28px;
+    color: #a64454;
+    position: relative;
+    font-family: 'Finger Paint', cursive;
+}
+
+.t-head h2:after {
+    content: "";
+    height: 3px;
+    width: 75px;
+    top: 80%;
+    left: 43%;
+    background-color: #a64454;
+    position: absolute;
+}
+
+.container {
+    width: 100%;
+
+}
+
+.container #tasks,
+.container #tasks .row,
+.container #tasks .row .caption,
+.container #tasks .row .action,
+.container #tasks .row .caption h2 {
+    background-color: transparent;
+}
+
+.container #tasks .row {
+    border-radius: 50px;
+    padding: 15px 20px;
+    background-image: linear-gradient(to left, #a64454, #52635b);
+    margin-bottom: 10px;
+}
+
+.container #tasks .row .caption {
+    width: 80%;
+    margin-top: 5px;
+}
+
+.container #tasks .row .caption h2 {
+    color: #f2ede0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container #tasks .row .action {
+    width: 20%;
+}
+
+.container #tasks .row .action .edit-btn,
+.container #tasks .row .action .del-btn {
+    width: 47%;
+    padding: 7px 0;
+    font-size: 15px;
+    color: #52635b;
+    background-color: #f2ede0;
+    border-radius: 50px;
+    border: 1px solid #52635b;
+    transition: 0.5s;
+}
+
+.container #tasks .row .action .del-btn:hover,
+.container #tasks .row .action .edit-btn:hover {
+    color: #a64454;
+}
+
+@media (max-width : 950px) {
+    header {
+        padding: 15px 0;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    .heading {
+        width: 85%;
+    }
+
+    .heading input {
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .heading button {
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .t-head h2 {
+        font-size: 26px;
+    }
+
+    .t-head h2:after {
+        top: 82%;
+    }
+
+    .container #tasks .row .caption {
+        margin-top: 2px;
+    }
+
+    .container #tasks .row .action .edit-btn,
+    .container #tasks .row .action .del-btn {
+        font-size: 19px;
+    }
+}
+
+@media (max-width : 600px) {
+    header {
+        padding: 10px 0;
+        justify-content: center;
+    }
+
+    img {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    main {
+        width: 95%;
+        padding: 100px 0 30px;
+    }
+
+    .heading {
+        width: 90%;
+    }
+
+    .heading input {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .heading button {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .t-head h2 {
+        font-size: 22px;
+    }
+
+    .t-head h2:after {
+        top: 82%;
+        left: 39%;
+        width: 70px;
+    }
+
+    .container #tasks .row .caption {
+        margin-top: 7px;
+        width: 80%;
+    }
+
+    .container #tasks .row .caption h2 {
+        font-size: 20px;
+    }
+
+    .container #tasks .row .action {
+        width: 25%;
+    }
+
+    .container #tasks .row .action .edit-btn,
+    .container #tasks .row .action .del-btn {
+        font-size: 17px;
+        width: 40%;
+        padding: 6px 7px;
+    }
+}
