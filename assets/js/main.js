@@ -2,10 +2,19 @@ let taskInput = document.querySelector("input.form-input");
 let mainBtn = document.querySelector("button.main-btn");
 let tasksDiv = document.querySelector(".container #tasks");
 let span = document.querySelector("span");
-console.log(span);
 tasksDiv.innerHTML = "";
 
 let allTasks = [];
+
+taskInput.addEventListener("keyup" , function(event){
+    if(event.key == "Enter"){
+        renderTask();
+    };
+})
+
+window.onload = function(){
+    taskInput.focus();
+};
 
 // Render User inputs
 // Create
